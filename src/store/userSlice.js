@@ -58,7 +58,7 @@ const userSlice = createSlice({
       .addCase(fetchUserData.fulfilled, (state, action) => {
         state.status = 'succeeded';
         state.currentUser = action.payload;
-        Cookies.set("user", JSON.stringify(action.payload), { expires: 7 }); // Cookie expires in 7 days
+        Cookies.set("user", JSON.stringify(action.payload), { expires: 1 }); // Cookie expires in one day
       })
       .addCase(fetchUserData.rejected, (state, action) => {
         state.status = 'failed';
