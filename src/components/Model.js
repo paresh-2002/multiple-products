@@ -19,7 +19,7 @@ const AddItemModel = ({ setIsOpen, isOpen, item }) => {
   const [productImg, setProductImg] = useState(null);
   const [existingImg, setExistingImg] = useState("");
   const [error, setError] = useState("");
-  
+
   useEffect(() => {
     if (item) {
       setFormData({
