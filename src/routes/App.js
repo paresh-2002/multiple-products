@@ -17,7 +17,6 @@ import Footer from "../components/Footer";
 
 const RequireAuth = ({ children }) => {
   const currentUser = useSelector((state) => state.user.currentUser);
-  console.log(currentUser);
   return currentUser ? children : <Navigate to="/" />;
 };
 

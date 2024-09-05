@@ -19,7 +19,9 @@ const orderSlice = createSlice({
             return state.filter((itemId) => itemId !== action.payload);
           },
           increment: (state, action) => {
+            console.log(action.payload);
            return state++
+           
           },
           decrement: (state, action) => {
             return  state--

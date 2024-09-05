@@ -14,10 +14,10 @@ const OrderItems = ({ item }) => {
       }
     };
     const decrement = () => {
-        dispatch(OrderActions.decrement(item));
+        dispatch(OrderActions.decrement({id:item.id,item}));
     }
     const increment = () => {
-      dispatch(OrderActions.increment(item));
+      dispatch(OrderActions.increment({id:item.id,item}));
     }
   return (
     <div className="text-sm border rounded relative mb-2 pt-3 pb-0 px-3 border-solid border-[#eaeaec];

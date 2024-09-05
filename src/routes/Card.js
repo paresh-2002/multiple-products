@@ -15,7 +15,6 @@ const Card = () => {
     () => items.filter((item) => order.includes(item.id)),
     [items, order]
   );
-console.log(finalItems);
 
   const handleSearch = debounce((value) => {
     setSearchVal(value);
